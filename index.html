@@ -15,8 +15,6 @@
 </head>
 <body>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
   <div id="player"></div>
 	
   <script type="text/javascript">
@@ -52,7 +50,7 @@
                 'controls': 0,
                 'color':'white',
                 'loop': 1,
-                'mute':0,
+                'mute': 1,
           },
           events: {
             'onReady': onPlayerReady,
@@ -62,6 +60,8 @@
     
       function onPlayerReady(event) {
         player.playVideo();
+	player.unmute();
+	player.playVideo();
       }
 	</script>
 </body>
