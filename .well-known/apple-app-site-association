@@ -4,7 +4,13 @@
         "details": [
             {
                 "appID": "VS6Q4243MH.com.pheztech.dash.service",
-                "paths": [ "/establishment/*" ]
+                "components": [
+                    {
+                        "/": "/establishment/*/invite",
+                        "?": { "code": "*" },
+                        "comment": "Invite Link with code query parameter"
+                    }
+                ]
             }
         ]
     },
