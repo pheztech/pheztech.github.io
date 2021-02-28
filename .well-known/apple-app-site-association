@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "VS6Q4243MH.com.pheztech.dash.service",
-                "paths": [ "/establishment/*/invite" ]
+                "paths": [ "/establishment/*" ]
             }
         ]
     },
