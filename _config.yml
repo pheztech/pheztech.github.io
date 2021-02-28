@@ -1,2 +1,2 @@
 include: [".well-known"]
-permalink: /:collection_name/:filename
+permalink: pretty
