@@ -1,2 +1,2 @@
 include: [".well-known"]
-permalink: pretty
+permalink: /.well-known/apple-app-site-association
