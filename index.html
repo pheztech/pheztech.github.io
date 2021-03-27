@@ -1,199 +1,128 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/50891286?s=200&v=4" />
-	<meta property="og:title" content="App | PhezTech" />
-	<meta property="og:description" content="App | PhezTech" />
-    <title>App | PhezTech</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="https://avatars.githubusercontent.com/u/50891286?s=200&v=4" />
+	<meta property="og:title" content="PhezTech" />
+	<meta property="og:description" content="PhezTech" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+	<title>PhezTech</title>
 
-      .container {
-        max-width: 960px;
-      }
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-      .pricing-header {
-        max-width: 700px;
-      }
-
-      #trojan {
-      	z-index: 5;
-      }
-
-      #player-container {
-      	position: absolute;
-      	left: 0px;
-      	top: 0px;
-      }
-    </style>
-  </head>
-  <body>
-  <div id="trojan">
-  <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
-  <p class="h5 my-0 me-md-auto fw-normal">PHEZTECH</p>
-  <nav class="my-2 my-md-0 me-md-3">
-    <a class="p-2 text-dark" onclick="playVideo()">Features</a>
-    <a class="p-2 text-dark" onclick="playVideo()">Partners</a>
-    <a class="p-2 text-dark" onclick="playVideo()">Support</a>
-    <a class="p-2 text-dark" onclick="playVideo()">Pricing</a>
-  </nav>
-  <a class="btn btn-outline-primary" onclick="playVideo()">Login</a>
-</header>
-
-<main class="container">
-  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Partner Program</h1>
-    <p class="lead">This is just boilerplate. We will have stuff here. Just login to view the dashboard</p>
-  </div>
-
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-    <div class="col">
-      <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">Basic</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$200 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>1 Location</li>
-          <li>Email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="playVideo()">Join Now</button>
-      </div>
-    </div>
-    </div>
-    <div class="col">
-      <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">Pro</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$400 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>10 Locations</li>
-          <li>Priority email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg btn-primary" onclick="playVideo()">Get started</button>
-      </div>
-    </div>
-    </div>
-    <div class="col">
-      <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">Enterprise</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">Custom Quote</h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>10+ Location</li>
-          <li>Real time support?</li>
-          <li></li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg btn-primary" onclick="playVideo()">Contact</button>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="https://avatars.githubusercontent.com/u/50891286?s=200&v=4" alt="" width="24" height="19">
-        <small class="d-block mb-3 text-muted">&copy; 2019–2021</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" onclick="playVideo()">Cool stuff</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Random feature</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Team feature</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Stuff for developers</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Another one</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" onclick="playVideo()">Resource</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Resource name</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Another resource</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" onclick="playVideo()">Team</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Locations</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Privacy</a></li>
-          <li><a class="link-secondary" onclick="playVideo()">Terms</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</main>
-</div>
-
-<div id="player-container" hidden>
-	<div id="player"></div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-
-<script>
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-var player;
-
-function onYouTubeIframeAPIReady() {
-	player = new YT.Player('player', {
-	videoId: 'dQw4w9WgXcQ',
-		playerVars: {   
-			'autoplay': 1,   
-			'rel': 0,
-			'showinfo': 0,
-			'modestbranding': 1,
-			'playsinline': 1,
-			'showinfo': 0,
-			'rel': 0,
-			'controls': 0,
-			'color':'white',
-			'loop': 1,
-			'mute': 0,
+	<style>
+		body {
+			background-color: #373f47;
 		}
-	});
-}
-    
-function playVideo () {
-	document.getElementById('player-container').hidden = false
-	player.playVideo();
-}	
-</script>
-    
-  </body>
+
+		#trojan {
+			z-index: 5;
+		}
+
+		#player-container {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+
+		#social-button {
+			fill: #1c2024;
+		}
+
+		#social-button:hover {
+			fill: #272c32;
+		}
+
+		#social-button:active {
+			fill: #0b0d0e;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="trojan">
+		<main class="container">
+			<div class="row">
+				<div class="col-sm"></div>
+				<div class="col-sm">
+					<img src="./assets/logo.svg" alt="logo" width="512" height="512">
+				</div>
+				<div class="col-sm"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm"></div>
+				<div class="col-sm d-flex gap-4 justify-content-center">
+					<a id="social-button" href="https://twitter.com/pheztech">
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Twitter icon</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+					</a>
+					<a id="social-button" href="https://github.com/pheztech">
+						<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+					</a>
+					<a id="social-button" href="https://www.instagram.com/pheztech">
+						<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+					</a>
+					<a id="social-button" href="https://www.facebook.com/pheztech">
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Facebook icon</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+					</a>
+				</div>
+				<div class="col-sm"></div>
+			</div>
+		</main>
+	</div>
+
+	<div id="player-container" hidden>
+		<div id="player"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+	<script>
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		var player;
+
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+				videoId: 'dQw4w9WgXcQ',
+				playerVars: {
+					'autoplay': 1,
+					'rel': 0,
+					'showinfo': 0,
+					'modestbranding': 1,
+					'playsinline': 1,
+					'showinfo': 0,
+					'rel': 0,
+					'controls': 0,
+					'color': 'white',
+					'loop': 1,
+					'mute': 0,
+				}
+			});
+		}
+
+		function playVideo() {
+			document.getElementById('player-container').hidden = false
+			player.playVideo();
+		}
+	</script>
+
+</body>
+
 </html>
