@@ -77,7 +77,7 @@ const Home: NextPage = () => {
         <h1 className="font-bold text-4xl md:text-6xl">PHEZ Technologies</h1>
         <p className="font-thin">Coming Soon</p>
 
-        <div hidden={isHidden} className="absolute top-1/2">
+        <div hidden={isHidden} className="absolute top-1/2" aria-hidden>
           <YouTube
             videoId="dQw4w9WgXcQ"
             opts={{
